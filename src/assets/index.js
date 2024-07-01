@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import hostedlink from "./hostedlink.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,9 +27,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import chitchat from "./chitchat.jpeg";
+import shadowplay from "./shadowplay.png";
+import blogapp from "./blogapp.png";
 
 export {
   logo,
@@ -37,6 +38,7 @@ export {
   mobile,
   web,
   github,
+  hostedlink,
   menu,
   close,
   css,
@@ -56,7 +58,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  chitchat,
+  blogapp,
+  shadowplay,
 };

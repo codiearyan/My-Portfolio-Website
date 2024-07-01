@@ -19,10 +19,11 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  chitchat,
+  blogapp,
+  shadowplay,
   threejs,
+  hostedlink,
 } from "../assets";
 
 export const navLinks = [
@@ -198,9 +199,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Shadow Play",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Video Streaming Web App which allows users to Watch and share videos effortlessly, It brings a variety of content to your fingertips.",
     tags: [
       {
         name: "react",
@@ -215,50 +216,54 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: shadowplay,
+    hosted_link: "https://shadowplay.vercel.app/",
+
+    source_code_link: "https://github.com/AryanBhati7/Shadow-Play",
   },
   {
-    name: "Job IT",
+    name: "Blog App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Write blogs on various topics and start your journey as an impactful Content Creator, exploring your passions, sharing your knowledge and experiences with the world.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "appwrite",
+        color: "red-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: blogapp,
+    hosted_link: "https://blogapp07.vercel.app/",
+    source_code_link: "https://github.com/AryanBhati7/BlogApp",
   },
   {
-    name: "Trip Guide",
+    name: "ChitChat",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A ChatApp which includes social login, user search and addition, text messaging with emojis, user blocking and unblocking, and real-time messaging with image support.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "yellow-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: chitchat,
+    hosted_link: "https://react-chitchat.vercel.app/",
+    source_code_link: "https://github.com/AryanBhati7/ChitChat-ReactChatApp",
   },
 ];
 

@@ -7,6 +7,22 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const Popup = ({ message, onClose }) => {
+  return (
+    <div className="fixed z-40 inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+        <p className="text-gray-800 text-lg">{message}</p>
+        <button
+          onClick={onClose}
+          className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,6 +32,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
 
   const handleChange = (e) => {
     const { target } = e;
@@ -29,6 +47,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      setPopupMessage("Please fill all the fields.");
+      setShowPopup(true);
+      return;
+    }
     setLoading(true);
 
     emailjs
@@ -37,9 +61,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Aryan Bhati",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "codiearyan07@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,8 +71,10 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          setPopupMessage(
+            "Thank you. I will get back to you as soon as possible."
+          );
+          setShowPopup(true);
           setForm({
             name: "",
             email: "",
@@ -58,8 +84,8 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          setPopupMessage("Ahh, something went wrong. Please try again.");
+          setShowPopup(true);
         }
       );
   };
@@ -68,6 +94,9 @@ const Contact = () => {
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+      {showPopup && (
+        <Popup message={popupMessage} onClose={() => setShowPopup(false)} />
+      )}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[1]  bg-black-100 p-8 rounded-2xl"
