@@ -24,6 +24,8 @@ import {
   shadowplay,
   threejs,
   hostedlink,
+  tanstackquery,
+  java,
 } from "../assets";
 
 export const navLinks = [
@@ -43,11 +45,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -55,7 +57,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Graphic Designer",
     icon: creator,
   },
 ];
@@ -73,10 +75,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -105,13 +107,21 @@ const technologies = [
     name: "git",
     icon: git,
   },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
   {
-    name: "figma",
-    icon: figma,
+    name: "java",
+    icon: java,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "tanstackquery",
+    icon: tanstackquery,
   },
 ];
 
