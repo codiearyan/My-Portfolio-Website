@@ -23,6 +23,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 import tanstackquery from "./tech/tanstackquery.png";
 import java from "./tech/java.png";
+import express from "./tech/express.png";
+import appwrite from "./tech/appwrite.png";
+import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -57,7 +60,10 @@ export {
   redux,
   tailwind,
   typescript,
+  firebase,
+  appwrite,
   threejs,
+  express,
   meta,
   shopify,
   starbucks,

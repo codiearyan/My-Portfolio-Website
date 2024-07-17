@@ -26,6 +26,9 @@ import {
   hostedlink,
   tanstackquery,
   java,
+  express,
+  firebase,
+  appwrite,
 } from "../assets";
 
 export const navLinks = [
@@ -106,6 +109,18 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "express",
+    icon: express,
+  },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
+  {
+    name: "appwrite",
+    icon: appwrite,
   },
   // {
   //   name: "figma",
