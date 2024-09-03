@@ -59,6 +59,20 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li
+            key={"resume"}
+            className={`${
+              active === "Resume" ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => setActive("Resume")}
+          >
+            <a
+              target="_blank"
+              href={`https://drive.google.com/file/d/1xV-QEWZ4QyV1Xz9M8VECGF3xHqYRj5_G/view?usp=sharing`}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
