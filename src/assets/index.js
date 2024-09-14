@@ -27,10 +27,7 @@ import express from "./tech/express.png";
 import appwrite from "./tech/appwrite.png";
 import firebase from "./tech/firebase.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import kidjig from "./company/kidjig.svg";
 
 import chitchat from "./chitchat.jpeg";
 import shadowplay from "./shadowplay.png";
@@ -64,11 +61,8 @@ export {
   appwrite,
   threejs,
   express,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   chitchat,
   blogapp,
   shadowplay,
+  kidjig,
 };
