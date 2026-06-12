@@ -145,7 +145,7 @@ export const DATA = {
       active: true,
       description:
         "An intelligent AI companion supporting multiple frontier models, with visual intelligence over images, PDFs and docs, real-time web search, and an AI-powered document canvas.",
-      technologies: ["Next.js", "TypeScript", "AI SDK", "LangChain", "AWS S3"],
+      technologies: ["Next.js", "TypeScript", "AI SDK", "LangChain", "Cloudflare R2"],
       links: [
         {
           type: "Website",
