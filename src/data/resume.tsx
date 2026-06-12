@@ -230,29 +230,6 @@ export const DATA = {
       image: "/shadowplay.png",
       video: "",
     },
-    {
-      title: "BlogApp",
-      href: "https://blogapp07.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "A publishing platform to write blogs on any topic and start your journey as a content creator, with rich text editing, image uploads, and a clean reading experience.",
-      technologies: ["React", "Appwrite", "Redux", "Tailwind CSS"],
-      links: [
-        {
-          type: "Website",
-          href: "https://blogapp07.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/AryanBhati7/BlogApp",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/blogapp.png",
-      video: "",
-    },
   ],
   openSource: [
     {
