@@ -30,7 +30,12 @@ export default function Page() {
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between md:items-center">
             <div className="gap-3 flex flex-col order-2 md:order-1">
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <div className="flex items-center gap-2 w-fit rounded-full border border-primary/30 bg-primary/10 px-3 py-1">
+                <a
+                  href="https://wagr.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 w-fit rounded-full border border-primary/30 bg-primary/10 px-3 py-1 transition-colors hover:bg-primary/20"
+                >
                   <span className="relative flex size-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                     <span className="relative inline-flex size-2 rounded-full bg-primary" />
@@ -38,7 +43,7 @@ export default function Page() {
                   <span className="font-mono text-xs text-primary">
                     Building at Wagr Games
                   </span>
-                </div>
+                </a>
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 2} yOffset={8}>
                 <h1 className="font-display text-4xl tracking-tight sm:text-5xl lg:text-6xl">

@@ -87,7 +87,7 @@ export const DATA = {
     },
     {
       company: "Kidjig",
-      href: "https://kidjig.com",
+      href: "https://platform.kidjig.com/",
       badges: [],
       location: "Bareilly, India (Remote)",
       title: "Software Engineer Intern",
@@ -102,6 +102,29 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Rainbow English School",
+      href: "https://www.rainbowengschool.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Full ERP software and website for a school, plus a students app on Google Play. Admissions, attendance, fees, and notices in a Turborepo monorepo.",
+      technologies: ["React", "React Native (Expo)", "Fastify", "tRPC", "Astro"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.rainbowengschool.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.rainbow.mobile&hl=en_IN",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/proj-rainbow.png",
+      video: "",
+    },
     {
       title: "Sociact AI",
       href: "https://www.sociact.ai/dashboard",
@@ -118,24 +141,6 @@ export const DATA = {
         },
       ],
       image: "/projects/proj-sociact.png",
-      video: "",
-    },
-    {
-      title: "Obeny",
-      href: "https://obeny.ai/",
-      dates: "2025",
-      active: true,
-      description:
-        "An AI-powered social trading platform and agent marketplace. Build no-code trading agents, follow top traders with verified performance metrics, and monetize your creations.",
-      technologies: ["Next.js", "TypeScript", "Convex", "Generative AI"],
-      links: [
-        {
-          type: "Website",
-          href: "https://obeny.ai/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/projects/proj-obeny.png",
       video: "",
     },
     {
@@ -180,49 +185,21 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Educasm",
-      href: "https://educasm.aryancrafts.tech/",
+      title: "Obeny",
+      href: "https://obeny.ai/",
       dates: "2025",
       active: true,
       description:
-        "A Perplexity-style educational AI platform with instant doubt solving, quizzes, a playground, and interactive AI teacher sessions that adapt to your age.",
-      technologies: ["React", "TypeScript", "Generative AI"],
+        "An AI-powered social trading platform and agent marketplace. Build no-code trading agents, follow top traders with verified performance metrics, and monetize your creations.",
+      technologies: ["Next.js", "TypeScript", "Convex", "Generative AI"],
       links: [
         {
           type: "Website",
-          href: "https://educasm.aryancrafts.tech/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/codiearyan/educasm",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/proj-educasm.png",
-      video: "",
-    },
-    {
-      title: "Rainbow English School",
-      href: "https://www.rainbowengschool.com",
-      dates: "2025",
-      active: true,
-      description:
-        "Full ERP software and website for a school, plus a students app on Google Play. Admissions, attendance, fees, and notices in a Turborepo monorepo.",
-      technologies: ["React", "React Native (Expo)", "Fastify", "tRPC", "Astro"],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.rainbowengschool.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Play Store",
-          href: "https://play.google.com/store/apps/details?id=com.rainbow.mobile&hl=en_IN",
+          href: "https://obeny.ai/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/proj-rainbow.png",
+      image: "/projects/proj-obeny.png",
       video: "",
     },
     {
@@ -246,6 +223,29 @@ export const DATA = {
         },
       ],
       image: "/shadowplay.png",
+      video: "",
+    },
+    {
+      title: "Educasm",
+      href: "https://educasm.aryancrafts.tech/",
+      dates: "2025",
+      active: true,
+      description:
+        "A Perplexity-style educational AI platform with instant doubt solving, quizzes, a playground, and interactive AI teacher sessions that adapt to your age.",
+      technologies: ["React", "TypeScript", "Generative AI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://educasm.aryancrafts.tech/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/codiearyan/educasm",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/proj-educasm.png",
       video: "",
     },
     {
