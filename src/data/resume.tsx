@@ -139,6 +139,24 @@ export const DATA = {
       video: "",
     },
     {
+      title: "EventSchedulr",
+      href: "https://github.com/codiearyan/event-schedulr",
+      dates: "2026",
+      active: true,
+      description:
+        "An end-to-end event management platform with real-time sync. Create the event, share one code, and run the show live with polls, leaderboards, and announcements across web, iOS, and Android.",
+      technologies: ["Next.js", "Convex", "React Native (Expo)", "TypeScript", "Turborepo"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/codiearyan/event-schedulr",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/proj-eventschedulr.png",
+      video: "",
+    },
+    {
       title: "ChatSuite",
       href: "https://chat.aryancrafts.tech/",
       dates: "2025",
@@ -228,6 +246,29 @@ export const DATA = {
         },
       ],
       image: "/shadowplay.png",
+      video: "",
+    },
+    {
+      title: "BlogApp",
+      href: "https://blogapp07.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "A publishing platform to write blogs on any topic and start your journey as a content creator, with rich text editing, image uploads, and a clean reading experience.",
+      technologies: ["React", "Appwrite", "Redux", "Tailwind CSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://blogapp07.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/AryanBhati7/BlogApp",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/blogapp.png",
       video: "",
     },
   ],
