@@ -121,6 +121,24 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Obeny",
+      href: "https://obeny.ai/",
+      dates: "2025",
+      active: true,
+      description:
+        "An AI-powered social trading platform and agent marketplace. Build no-code trading agents, follow top traders with verified performance metrics, and monetize your creations.",
+      technologies: ["Next.js", "TypeScript", "Convex", "Generative AI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://obeny.ai/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/proj-obeny.png",
+      video: "",
+    },
+    {
       title: "ChatSuite",
       href: "https://chat.aryancrafts.tech/",
       dates: "2025",
