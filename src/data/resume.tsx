@@ -235,29 +235,6 @@ export const DATA = {
       image: "/blogapp.png",
       video: "",
     },
-    {
-      title: "ChitChat",
-      href: "https://react-chitchat.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "A real-time chat app with social login, user search, emoji messaging, image sharing, and block/unblock. Everything you expect from a modern messenger.",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
-      links: [
-        {
-          type: "Website",
-          href: "https://react-chitchat.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/AryanBhati7/ChitChat-ReactChatApp",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/chitchat.jpeg",
-      video: "",
-    },
   ],
   openSource: [
     {
