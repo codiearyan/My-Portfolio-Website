@@ -23,6 +23,7 @@ export const DATA = {
     { name: "Rust", iconUrl: "/tech/rust.svg" },
     { name: "SwiftUI", iconUrl: "/tech/swiftui.svg" },
     { name: "AWS", iconUrl: "/tech/aws.svg" },
+    { name: "Cloudflare", iconUrl: "/tech/cloudflare.svg" },
     { name: "Fastify", iconUrl: "/tech/fastify.svg" },
     { name: "FastAPI", iconUrl: "/tech/fastapi.svg" },
     { name: "Hono.js", iconUrl: "/tech/hono.svg" },
