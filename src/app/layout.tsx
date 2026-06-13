@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist_Mono, Hanken_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
+import { preload } from "react-dom";
 import "./globals.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
@@ -30,15 +31,37 @@ const clashDisplay = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Full Stack Developer (aryancrafts)`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  keywords: [
+    "Aryan",
+    "Aryan Bhati",
+    "aryancrafts",
+    "aryan crafts",
+    "codiearyan",
+    "Aryan SDE",
+    "Aryan code",
+    "Aryan developer",
+    "Aryan software engineer",
+    "Aryan full stack developer",
+    "Founding Engineer Wagr Games",
+    "Aryan portfolio",
+    "Aryan Bhati portfolio",
+  ],
+  authors: [{ name: DATA.name, url: DATA.url }],
+  creator: DATA.name,
+  publisher: DATA.name,
+  alternates: {
+    canonical: DATA.url,
+  },
+  category: "technology",
   openGraph: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} | Full Stack Developer`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: `${DATA.name} (aryancrafts)`,
     locale: "en_US",
     type: "website",
   },
@@ -54,8 +77,10 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} | Full Stack Developer`,
+    description: DATA.description,
     card: "summary_large_image",
+    creator: "@codiearyan",
   },
   verification: {
     google: "",
@@ -63,11 +88,53 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: DATA.name,
+  alternateName: ["Aryan", "aryancrafts", "codiearyan", "AryanBhati7"],
+  url: DATA.url,
+  image: `${DATA.url}${DATA.avatarUrl}`,
+  jobTitle: "Founding Engineer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Wagr Games",
+    url: "https://wagr.co",
+  },
+  description: DATA.description,
+  sameAs: [
+    "https://github.com/codiearyan",
+    "https://github.com/AryanBhati7",
+    "https://x.com/codiearyan",
+  ],
+  knowsAbout: [
+    "Full Stack Development",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "React Native",
+    "Node.js",
+    "Rust",
+    "AWS",
+    "Generative AI",
+  ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "aryancrafts",
+  alternateName: ["Aryan Bhati Portfolio", "aryancrafts.tech"],
+  url: DATA.url,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  preload(DATA.avatarUrl, { as: "image", fetchPriority: "high" });
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -78,6 +145,14 @@ export default function RootLayout({
           clashDisplay.variable
         )}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
             <div className="absolute inset-x-0 top-0 h-[180px] overflow-hidden z-0">

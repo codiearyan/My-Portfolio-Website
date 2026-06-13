@@ -4,14 +4,14 @@ import { FileTextIcon, HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Aryan Bhati",
   initials: "AB",
-  url: "https://aryanbhati.vercel.app",
+  url: "https://aryancrafts.tech",
   location: "India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
     "Full Stack Developer crafting fast, polished experiences. Founding Engineer at Wagr Games, building real-time gaming products across web, iOS, and Android.",
   summary:
     "I'm a full stack developer who loves taking products from idea to production: scalable backends, snappy frontends, and the design details in between. Since **January 2025** I've been a **Founding Engineer at Wagr Games**, building gaming experiences for web, iOS, and Android. Before that I interned at **Kidjig**, shipping AI applications and tools end to end. Outside of work you'll find me building side projects and exploring new tools.",
-  avatarUrl: "/avatar.png",
+  avatarUrl: "/avatar.jpg",
   skills: [
     { name: "TypeScript", iconUrl: "/tech/typescript.png" },
     { name: "JavaScript", iconUrl: "/tech/javascript.png" },
