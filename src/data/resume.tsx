@@ -110,7 +110,13 @@ export const DATA = {
       active: true,
       description:
         "Full ERP software and website for a school, plus a students app on Google Play. Admissions, attendance, fees, and notices in a Turborepo monorepo.",
-      technologies: ["React", "React Native (Expo)", "Fastify", "tRPC", "Astro"],
+      technologies: [
+        "React",
+        "React Native (Expo)",
+        "Fastify",
+        "tRPC",
+        "Astro",
+      ],
       links: [
         {
           type: "Website",
@@ -120,7 +126,12 @@ export const DATA = {
         {
           type: "Play Store",
           href: "https://play.google.com/store/apps/details?id=com.rainbow.mobile&hl=en_IN",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.playstore className="size-3" />,
+        },
+        {
+          type: "App Store",
+          href: "https://apps.apple.com/np/app/rainbow-english-school/id6759599211",
+          icon: <Icons.appstore className="size-3" />,
         },
       ],
       image: "/projects/proj-rainbow.png",
@@ -151,7 +162,13 @@ export const DATA = {
       active: true,
       description:
         "An end-to-end event management platform with real-time sync. Create the event, share one code, and run the show live with polls, leaderboards, and announcements across web, iOS, and Android.",
-      technologies: ["Next.js", "Convex", "React Native (Expo)", "TypeScript", "Turborepo"],
+      technologies: [
+        "Next.js",
+        "Convex",
+        "React Native (Expo)",
+        "TypeScript",
+        "Turborepo",
+      ],
       links: [
         {
           type: "Source",
@@ -169,7 +186,13 @@ export const DATA = {
       active: true,
       description:
         "An intelligent AI companion supporting multiple frontier models, with visual intelligence over images, PDFs and docs, real-time web search, and an AI-powered document canvas.",
-      technologies: ["Next.js", "TypeScript", "AI SDK", "LangChain", "Cloudflare R2"],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "AI SDK",
+        "LangChain",
+        "Cloudflare R2",
+      ],
       links: [
         {
           type: "Website",
@@ -210,7 +233,13 @@ export const DATA = {
       active: true,
       description:
         "A video streaming platform to watch and share videos effortlessly, with channels, playlists, likes, and a creator dashboard bringing a variety of content to your fingertips.",
-      technologies: ["React", "MongoDB", "Express", "TanStack Query", "Tailwind CSS"],
+      technologies: [
+        "React",
+        "MongoDB",
+        "Express",
+        "TanStack Query",
+        "Tailwind CSS",
+      ],
       links: [
         {
           type: "Website",

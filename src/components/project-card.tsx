@@ -60,7 +60,7 @@ export function ProjectCard({
     <div
       className={cn(
         "group relative isolate flex h-full flex-col overflow-hidden rounded-[18px] border border-border/80 bg-card shadow-[0_1px_0_rgba(255,255,255,0.04)_inset] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:shadow-[0_18px_50px_-30px] hover:shadow-primary/50",
-        className
+        className,
       )}
     >
       <div
@@ -97,13 +97,17 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="absolute right-2 top-2 flex gap-1.5">
             {links.map((link) => (
-              <span
-                key={link.type}
-                className="flex h-7 w-7 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white shadow-lg backdrop-blur-md transition-transform duration-200 group-hover:scale-105"
-                aria-hidden
+              <button
+                key={link.href.slice(0, 15)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open(link.href, "_blank");
+                }}
+                className="flex h-7 w-7 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white"
               >
                 {link.icon}
-              </span>
+              </button>
             ))}
           </div>
         )}
@@ -143,22 +147,6 @@ export function ProjectCard({
                   +{tags.length - 3}
                 </span>
               )}
-            </div>
-          )}
-          {links && links.length > 0 && (
-            <div className="flex flex-none gap-1">
-              {links.map((link) => (
-                <Link
-                  href={link.href}
-                  key={link.type}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${title} ${link.type}`}
-                  className="flex h-6 w-6 items-center justify-center rounded-md border border-border/60 text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-                >
-                  {link.icon}
-                </Link>
-              ))}
             </div>
           )}
         </div>
