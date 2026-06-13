@@ -6,32 +6,40 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function ProjectsSection() {
     return (
-        <section id="projects">
-            <div className="flex min-h-0 flex-col gap-y-8">
-                <div className="flex flex-col gap-y-4 items-center justify-center">
-                    <div className="flex items-center w-full">
+        <section>
+            <div className="flex min-h-0 flex-col gap-y-7">
+                <div className="relative flex flex-col items-center justify-center gap-y-4 text-center">
+                    <div
+                        aria-hidden
+                        className="absolute left-1/2 top-1/2 -z-10 h-32 w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl"
+                    />
+                    <div className="flex w-full items-center">
                         <div
-                            className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent"
+                            className="h-px flex-1 bg-linear-to-r from-transparent from-5% via-primary/30 via-60% to-border/40"
 
                         />
-                        <div className="border border-primary/30 bg-primary z-10 rounded-xl px-4 py-1">
-                            <span className="text-primary-foreground text-sm font-medium">My Projects</span>
+                        <div className="z-10 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 shadow-[0_0_30px_-16px] shadow-primary">
+                            <span className="font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-primary">
+                                Selected Builds
+                            </span>
                         </div>
                         <div
-                            className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent"
+                            className="h-px flex-1 bg-linear-to-l from-transparent from-5% via-primary/30 via-60% to-border/40"
 
                         />
                     </div>
-                    <div className="flex flex-col gap-y-3 items-center justify-center">
-                        <h2 className="font-display text-3xl tracking-tight sm:text-4xl">Check out my latest work</h2>
-                        <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                            I&apos;ve worked on a variety of projects, from simple
-                            websites to complex web applications. Here are a few of my
-                            favorites.
+                    <div className="flex flex-col items-center justify-center gap-y-3">
+                        <h2 className="font-display text-3xl tracking-tight sm:text-4xl">
+                            Products, platforms, and AI tools
+                        </h2>
+                        <p className="max-w-2xl text-balance text-center text-sm leading-7 text-muted-foreground sm:text-base">
+                            A tighter look at the shipped work: school ERP systems, AI
+                            dashboards, event tooling, and full-stack products with real
+                            users.
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
+                <div className="mx-auto grid max-w-[800px] auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2">
                     {DATA.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}
@@ -56,4 +64,3 @@ export default function ProjectsSection() {
         </section>
     );
 }
-
