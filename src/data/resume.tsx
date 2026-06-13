@@ -175,6 +175,16 @@ export const DATA = {
           href: "https://github.com/codiearyan/event-schedulr",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://eventschedulr.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Android (.apk)",
+          href: "https://github.com/codiearyan/event-schedulr/releases/latest/download/eventschedulr.apk",
+          icon: <Icons.android className="size-3" />,
+        },
       ],
       image: "/projects/proj-eventschedulr.png",
       video: "",
