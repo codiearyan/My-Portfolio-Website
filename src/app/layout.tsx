@@ -31,7 +31,7 @@ const clashDisplay = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: `${DATA.name} | Full Stack Developer (aryancrafts)`,
+    default: `${DATA.name} | Full Stack Developer (codiearyan)`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: `${DATA.name} | Full Stack Developer`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name} (aryancrafts)`,
+    siteName: `${DATA.name} (codiearyan)`,
     locale: "en_US",
     type: "website",
   },
@@ -92,7 +92,15 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: DATA.name,
-  alternateName: ["Aryan", "aryancrafts", "codiearyan", "AryanBhati7"],
+  alternateName: [
+    "Aryan",
+    "aryanbhati",
+    "codiearyan",
+    "AryanBhati7",
+    "aryancrafts",
+    "Aryan Bhati",
+    "aryan sde",
+  ],
   url: DATA.url,
   image: `${DATA.url}${DATA.avatarUrl}`,
   jobTitle: "Founding Engineer",
@@ -123,8 +131,8 @@ const personJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "aryancrafts",
-  alternateName: ["Aryan Bhati Portfolio", "aryancrafts.tech"],
+  name: "aryanbhati",
+  alternateName: ["Aryan Bhati Portfolio", "aryanbhati.com"],
   url: DATA.url,
 };
 
@@ -142,7 +150,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased relative",
           hankenGrotesk.variable,
           geistMono.variable,
-          clashDisplay.variable
+          clashDisplay.variable,
         )}
       >
         <script

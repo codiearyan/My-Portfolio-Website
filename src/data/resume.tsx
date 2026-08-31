@@ -4,7 +4,7 @@ import { FileTextIcon, HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Aryan Bhati",
   initials: "AB",
-  url: "https://aryancrafts.tech",
+  url: "https://aryanbhati.com",
   location: "India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
@@ -206,7 +206,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chat.aryancrafts.tech/",
+          href: "https://chat.aryanbhati.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
