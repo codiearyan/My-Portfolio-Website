@@ -191,7 +191,7 @@ export const DATA = {
     },
     {
       title: "ChatSuite",
-      href: "https://chat.aryancrafts.tech/",
+      href: "https://chat.aryanbhati.com/",
       dates: "2025",
       active: true,
       description:
@@ -238,7 +238,7 @@ export const DATA = {
     },
     {
       title: "Shadow Play",
-      href: "https://shadowplay.vercel.app/",
+      href: "https://shadowplay.aryanbhati.com/",
       dates: "2024",
       active: true,
       description:
@@ -253,7 +253,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://shadowplay.vercel.app/",
+          href: "https://shadowplay.aryanbhati.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -267,7 +267,7 @@ export const DATA = {
     },
     {
       title: "Educasm",
-      href: "https://educasm.aryancrafts.tech/",
+      href: "https://educasm.aryanbhati.com/",
       dates: "2025",
       active: true,
       description:
@@ -276,7 +276,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://educasm.aryancrafts.tech/",
+          href: "https://educasm.aryanbhati.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -290,7 +290,7 @@ export const DATA = {
     },
     {
       title: "BlogApp",
-      href: "https://blogapp07.vercel.app/",
+      href: "https://blogapp.aryanbhati.com/",
       dates: "2024",
       active: true,
       description:
@@ -299,7 +299,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://blogapp07.vercel.app/",
+          href: "https://blogapp.aryanbhati.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
