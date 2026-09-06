@@ -14,6 +14,7 @@ const CTAS = [
     label: "Message on",
     href: DATA.contact.social.X.url,
     icon: Icons.x,
+    iconAfter: true,
     variant: "outline" as const,
   },
   {
@@ -27,7 +28,7 @@ const CTAS = [
 export default function HeroCtas() {
   return (
     <div className="flex flex-wrap items-center gap-2.5">
-      {CTAS.map(({ label, href, icon: Icon, variant }) => (
+      {CTAS.map(({ label, href, icon: Icon, iconAfter, variant }) => (
         <Button
           key={label}
           asChild
@@ -35,8 +36,9 @@ export default function HeroCtas() {
           className="h-10 gap-2 rounded-full px-5"
         >
           <a href={href} target="_blank" rel="noopener noreferrer">
-            <Icon className="size-4" />
+            {!iconAfter && <Icon className="size-4" />}
             {label}
+            {iconAfter && <Icon className="size-3.5" />}
           </a>
         </Button>
       ))}

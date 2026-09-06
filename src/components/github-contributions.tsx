@@ -135,7 +135,7 @@ export default async function GithubContributions() {
   const total = Object.values(data.total)[0] ?? 0;
 
   return (
-    <div className="rounded-xl border bg-card/40 p-5 backdrop-blur-sm">
+    <div className="rounded-xl border bg-card/40 p-4 sm:p-5 backdrop-blur-sm">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex items-center gap-3">
           <span className="relative flex size-2">
@@ -153,10 +153,10 @@ export default async function GithubContributions() {
         </div>
       </div>
 
-      <div className="mt-5 -mx-1 overflow-x-auto px-1 pb-1">
+      <div className="no-scrollbar mt-5 -mx-1 overflow-x-auto px-1 pb-1">
         <div
           className="inline-flex w-max flex-col gap-1"
-          style={{ "--cell": "10px" } as React.CSSProperties}
+          style={{ "--cell": "8px" } as React.CSSProperties}
         >
           <div
             className="grid gap-[3px]"
