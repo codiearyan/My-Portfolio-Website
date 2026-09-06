@@ -98,7 +98,7 @@ export function ProjectCard({
           <div className="absolute right-2 top-2 flex gap-1.5">
             {links.map((link) => (
               <button
-                key={link.href.slice(0, 15)}
+                key={link.href}
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
