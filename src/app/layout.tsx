@@ -114,6 +114,7 @@ const personJsonLd = {
     "https://github.com/codiearyan",
     "https://github.com/AryanBhati7",
     "https://x.com/codiearyan",
+    "https://www.linkedin.com/in/aryan-bhati",
   ],
   knowsAbout: [
     "Full Stack Development",

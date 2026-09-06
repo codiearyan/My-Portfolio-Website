@@ -12,6 +12,8 @@ export const DATA = {
   summary:
     "I'm a full stack developer who loves taking products from idea to production: scalable backends, snappy frontends, and the design details in between. Since **January 2025** I've been a **Founding Engineer at Wagr Games**, building gaming experiences for web, iOS, and Android. Before that I interned at **Kidjig**, shipping AI applications and tools end to end. Outside of work you'll find me building side projects and exploring new tools.",
   avatarUrl: "/avatar.jpg",
+  githubUsername: "codiearyan",
+  calUrl: "https://cal.com/codiearyan/30min",
   skills: [
     { name: "TypeScript", iconUrl: "/tech/typescript.png" },
     { name: "JavaScript", iconUrl: "/tech/javascript.png" },
@@ -58,6 +60,12 @@ export const DATA = {
         name: "X",
         url: "https://x.com/codiearyan",
         icon: Icons.x,
+        navbar: true,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/aryan-bhati",
+        icon: Icons.linkedin,
         navbar: true,
       },
       email: {
