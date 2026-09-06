@@ -113,14 +113,9 @@ function getStreaks(days: Contribution[]) {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex flex-col gap-0.5">
-      <span className="font-display text-xl tracking-tight text-foreground">
-        {value}
-      </span>
-      <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-        {label}
-      </span>
-    </div>
+    <span>
+      <span className="text-foreground">{value}</span> {label}
+    </span>
   );
 }
 
@@ -136,20 +131,22 @@ export default async function GithubContributions() {
 
   return (
     <div className="rounded-xl border bg-card/40 p-4 sm:p-5 backdrop-blur-sm">
-      <div className="flex flex-wrap items-end justify-between gap-4">
-        <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <div className="flex items-center gap-2.5">
           <span className="relative flex size-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex size-2 rounded-full bg-primary" />
           </span>
-          <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
+          <span className="font-mono text-[11px] tracking-widest text-muted-foreground uppercase">
             Contributions
           </span>
         </div>
-        <div className="flex items-end gap-6">
-          <Stat label="Last year" value={total.toLocaleString()} />
-          <Stat label="Current streak" value={`${current}d`} />
-          <Stat label="Longest" value={`${longest}d`} />
+        <div className="flex items-center gap-2.5 font-mono text-[11px] text-muted-foreground">
+          <Stat label="last year" value={total.toLocaleString()} />
+          <span className="text-border">/</span>
+          <Stat label="streak" value={`${current}d`} />
+          <span className="text-border">/</span>
+          <Stat label="best" value={`${longest}d`} />
         </div>
       </div>
 
