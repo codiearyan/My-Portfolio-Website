@@ -3,7 +3,10 @@ import BlurFade from "@/components/magicui/blur-fade";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Markdown from "react-markdown";
+import { Suspense } from "react";
 import ContactSection from "@/components/section/contact-section";
+import GithubContributions from "@/components/github-contributions";
+import HeroCtas from "@/components/hero-ctas";
 import OpenSourceSection from "@/components/section/open-source-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
@@ -58,6 +61,9 @@ export default function Page() {
                   {DATA.description}
                 </p>
               </BlurFade>
+              <BlurFade delay={BLUR_FADE_DELAY * 4} className="pt-1">
+                <HeroCtas />
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border border-primary/30 rounded-full ring-4 ring-primary/15 shadow-[0_0_60px_-10px] shadow-primary/50">
@@ -72,6 +78,17 @@ export default function Page() {
             </BlurFade>
           </div>
         </div>
+      </section>
+      <section id="activity">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <Suspense
+            fallback={
+              <div className="h-[248px] rounded-xl border bg-card/40 animate-pulse" />
+            }
+          >
+            <GithubContributions />
+          </Suspense>
+        </BlurFade>
       </section>
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
